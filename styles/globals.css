@@ -17,14 +17,15 @@ a {
 
 * {
   box-sizing: border-box;
+  padding: 0;
+  margin: 0;
 }
-
-@media (prefers-color-scheme: dark) {
-  html {
-    color-scheme: dark;
-  }
-  body {
-    color: white;
-    background: black;
-  }
+.card{
+  @apply mb-5 rounded-lg border-gray-200 shadow-md 
+}
+.primary-button{
+  @apply rounded text-white bg-emerald-500 py-2 px-4 shadow 
+         outline-none hover:bg-white active:bg-emerald-500 
+         hover:text-emerald-500 hover:outline-1 
+         active:text-white 
 }
